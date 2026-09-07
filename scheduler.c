@@ -48,7 +48,7 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     arquivo = fopen(nome_arquivo, "r");
 
     if(arquivo==NULL){
-        printf(stderr,"Não foi possivel abrir o arquivo\n");
+        fprintf(stderr,"Não foi possivel abrir o arquivo\n");
         return 0;
     }
     if(fgets(linha, sizeof linha, arquivo) == NULL || !ler_positivo(linha, tempo_total)){
@@ -59,14 +59,14 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     *quantidade = 0;
 
     while (fgets(linha,sizeof linha, arquivo)!= NULL){ 
-        if(sscanf(linha,  "%31s %31s %31s %31s %1s", tarefa.nome, tarefa.periodo, tarefa_deadline, texto_burst, extra) != 4){
+        if(sscanf(linha,  "%31s %31s %31s %31s %1s", tarefa.nome, texto_periodo, texto_deadline, texto_burst, extra) != 4){
             fprintf(stderr, "ERRO: linha de tarefa invalida\n");
             free(*tarefas);
             fclose(arquivo);
             return 0;
         }
         if(!ler_positivo(texto_periodo, &tarefa.periodo) || !ler_positivo(texto_deadline, &tarefa.deadline) || !ler_positivo(texto_burst,&tarefa.burst )){
-            fprintf(stderr, "erro; valor de tarefa invalido"\n);
+            fprintf(stderr, "erro; valor de tarefa invalido\n");
             free(*tarefas);
             fclose(arquivo);
             return 0;
