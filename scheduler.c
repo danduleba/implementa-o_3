@@ -126,6 +126,20 @@ int tem_prioridade(const Tarefa *a, const Tarefa *b, const char *algoritimo){
     return a->ordem < b->ordem;
 }
 
+int escolher_tarefa(Tarefa *tarefas, int quantidade, const char *algoritimo){
+    int escolhida = -1;
+    int i;
+    for(i = 0; i < quantidade; i++){
+        if(!tarefas[i].ativa || tarefas[i].restante ==0){
+            continue;
+        }
+        if (escolhida == -1 || tem_prioridade(&tarefas[i], &tarefas[escolhida], algoritimo)){
+            escolhida = i;
+        }
+    }
+    return escolhida;
+}
+
 int main(int argc, char *argv[]) {
     Tarefa *tarefas;
     int quantidade;
