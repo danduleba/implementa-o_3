@@ -334,4 +334,24 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
 	[31mmodified:   scheduler.c[m
 
-[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ git status[1Padd .[1Ppushadd .
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ git commit -m "add função escolher tarefa"
+[?2004l[main 691d6dc] add função escolher tarefa
+ 2 files changed, 89 insertions(+), 1 deletion(-)
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 1.57 KiB | 72.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/danduleba/implementa-o_3.git
+   be55778..691d6dc  main -> main
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ c]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdan

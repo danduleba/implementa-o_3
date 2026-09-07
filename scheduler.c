@@ -139,6 +139,30 @@ int escolher_tarefa(Tarefa *tarefas, int quantidade, const char *algoritimo){
     }
     return escolhida;
 }
+int liberar_tarefas(Tarefa *tarefas, int quantidade, int tempo){
+    int i;
+
+    for(i=0; i<quantidade; i++){
+        if(tempo % tarefas[i]. periodo == 0){
+            tarefas[i].restante = tarefas[i].burst;
+            tarefas[i].deadline_absoluto = tempo + tarefas[i].deadline;
+            tarefas[i].ativa = 1;
+        }
+    }
+}
+
+void inicalizar_tarefa(Tarefa *tarefas, int quantidade){
+    int i;
+    for(i=0; i<quantidade; i++){
+        tarefas[i].restante = 0;
+        tarefas[i].deadline_absoluto = 0;
+        tarefas[i].concluidas = 0;
+        tarefas[i].perdidas = 0;
+        tarefas[i].mortas = 0;
+        tarefas[i].ativa = 0;
+
+    }
+}
 
 int main(int argc, char *argv[]) {
     Tarefa *tarefas;
