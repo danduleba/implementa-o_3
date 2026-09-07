@@ -13,6 +13,12 @@ typedef struct {
     int deadline;
     int burst;
     int ordem;
+    int restante; 
+    int deadline_absoluto;
+    int concluidas;
+    int pardidas;
+    int mortas;
+    int ativa;
 }Tarefa;
 
 int ler_positivo(const char *texto, int *valor){
@@ -100,6 +106,24 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
 
     return 1;
     
+}
+
+int tem_prioridade(const Tarefa *a, const Tarefa *b, const char *algoritimo){
+    int prioridade_a;
+    int prioridade_b;
+
+    if(strcmp(algoritimo, "rate") == 0){
+        prioridade_a = a->periodo;
+        prioridade_b = b->periodo;
+    }
+    else{
+        prioridade_a = a->deadline_absoluto;
+        prioridade_b = b->deadline_absoluto;
+    }
+    if(prioridade_a!=prioridade_b){
+        return prioridade_a<prioridade_b;
+    }
+    return a->ordem < b->ordem;
 }
 
 int main(int argc, char *argv[]) {
