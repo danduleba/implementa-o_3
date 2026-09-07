@@ -59,7 +59,70 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     *quantidade = 0;
 
     while (fgets(linha,sizeof linha, arquivo)!= NULL){ 
-        if(sscanf(linha,  "%31s %31s %31s %31s %31s"))
+        if(sscanf(linha,  "%31s %31s %31s %31s %1s", tarefa.nome, tarefa.periodo, tarefa_deadline, texto_burst, extra) != 4){
+            fprintf(stderr, "ERRO: linha de tarefa invalida\n");
+            free(*tarefas);
+            fclose(arquivo);
+            return 0;
+        }
+        if(!ler_positivo(texto_periodo, &tarefa.periodo) || !ler_positivo(texto_deadline, &tarefa.deadline) || !ler_positivo(texto_burst,&tarefa.burst )){
+            fprintf(stderr, "erro; valor de tarefa invalido"\n);
+            free(*tarefas);
+            fclose(arquivo);
+            return 0;
+        }
+        if(tarefa.burst>tarefa.deadline || tarefa.deadline > tarefa.periodo){
+            fprintf(stderr, "erro: a tarefa deve respeitar C <= D <= P.\n");
+            free(*tarefas);
+            fclose(arquivo);
+            return 0;
+        }
+        tarefa.ordem= *quantidade;
+        novo = realloc(*tarefas,(size_t)(*quantidade+1) * sizeof **tarefas);
+        if (novo == NULL) {
+            fprintf(stderr, "Erro: falha na alocacao de memoria.\n");
+            free(*tarefas);
+            fclose(arquivo);
+            return 0;
+        }
+        *tarefas = novo;
+        (*tarefas)[*quantidade] = tarefa;
+        (*quantidade)++;
     }
+    fclose(arquivo);
+
+    if (*quantidade == 0) {
+        fprintf(stderr, "Erro: nenhuma tarefa encontrada.\n");
+        free(*tarefas);
+        *tarefas = NULL;
+        return 0;
+    }
+
+    return 1;
     
+}
+
+int main(int argc, char *argv[]) {
+    Tarefa *tarefas;
+    int quantidade;
+    int tempo_total;
+
+    if (argc != 3) {
+        fprintf(stderr, "Uso: %s rate|edf arquivo\n", argv[0]);
+        return 1;
+    }
+
+    if (strcmp(argv[1], "rate") != 0 &&
+        strcmp(argv[1], "edf") != 0) {
+        fprintf(stderr, "Erro: use rate ou edf.\n");
+        return 1;
+    }
+
+    if (!carregar_arquivo(argv[2], &tempo_total,
+                          &tarefas, &quantidade)) {
+        return 1;
+    }
+
+    free(tarefas);
+    return 0;
 }
