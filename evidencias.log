@@ -111,4 +111,153 @@ In file included from [01m[Kscheduler.c:3[m[K:
       |                                                    [01;31m[K^~~~~~~~~~~~~~[m[K
 [01m[Kscheduler.c:62:67:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
 [01m[Kscheduler.c:62:83:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarefa_deadline[m[K’ undeclared (first use in this function); did you mean ‘[01m[Ktexto_deadline[m[K’?
-   62 |  %31s %31s %31s %1s", tarefa.nome, tarefa_periodo, [01;31m[Ktarefa_deadlin
+   62 |  %31s %31s %31s %1s", tarefa.nome, tarefa_periodo, [01;31m[Ktarefa_deadline[m[K, texto_burst, extra) != 4){
+      |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                    [32m[Ktexto_deadline[m[K
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [7mprintf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txt[27m[C[C[Cprintf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txt
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [7m./scheduler rate voo.txt[27m
+[7mecho "Codigo: $?"[27m[A[C[C[C./scheduler rate voo.txt
+echo "Codigo: $?"
+[?2004lCodigo: 0
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ g]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ i]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ t]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ add .
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ s[Kgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   evidencias.log[m
+	[32mnew file:   scheduler[m
+	[32mrenamed:    main.c -> scheduler.c[m
+	[32mnew file:   voo.txt[m
+
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git commit -m "corração de sintaxe e texte iniciaç [K[Kl aprovado"
+[?2004l[main a88b3a1] corração de sintaxe e texte inicial aprovado
+ 4 files changed, 120 insertions(+), 3 deletions(-)
+ create mode 100644 scheduler
+ rename main.c => scheduler.c (90%)
+ create mode 100644 voo.txt
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git push
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  16% (1/6)Writing objects:  33% (2/6)Writing objects:  50% (3/6)Writing objects:  66% (4/6)Writing objects:  83% (5/6)Writing objects: 100% (6/6)Writing objects: 100% (6/6), 7.11 KiB | 214.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/danduleba/implementa-o_3.git
+   ea81d15..a88b3a1  main -> main
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [H[2J]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ printf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txt
+
+echo "===== TESTE 1: RATE VALIDO ====="
+./scheduler rate voo.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 2: EDF VALIDO ====="
+./scheduler edf voo.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 3: ALGORITMO INVALIDO ====="
+./scheduler outro voo.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 4: ARQUIVO INEXISTENTE ====="
+./scheduler rate inexistente.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 5: VALOR NAO NUMERICO ====="
+printf '100\nATT vinte 12 8\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 6: BURST MAIOR QUE DEADLINE ====="
+printf '100\nATT 20 5 8\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 7: DEADLINE MAIOR QUE PERIODO ====="
+printf '100\nATT 20 25 8\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 8: ARQUIVO SEM TAREFAS ====="
+printf '100\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 9: TEMPO TOTAL INVALIDO ====="
+[7mprintf 'zero\nATT 20 12 8\n' > invalido.txt[27m
+[7m./scheduler rate invalido.txt[27m
+[7mecho "Codigo retornado: $?"[27m
+
+[7mecho[27m
+[7mecho "===== TESTE 10: CAMPO FALTANDO ====="[27m
+[7mprintf '100\nATT 20 12\n' > invalido.txt[27m
+[7m./scheduler rate invalido.txt[27m
+[7mecho "Codigo retornado: $?"[27m
+
+[7mrm -f invalido.txt[27m[A[A[A[A[A[A[A[A[A[Aprintf 'zero\nATT 20 12 8\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+echo
+echo "===== TESTE 10: CAMPO FALTANDO ====="
+printf '100\nATT 20 12\n' > invalido.txt
+./scheduler rate invalido.txt
+echo "Codigo retornado: $?"
+
+rm -f invalido.txt
+[?2004l===== TESTE 1: RATE VALIDO =====
+Codigo retornado: 0
+
+===== TESTE 2: EDF VALIDO =====
+Codigo retornado: 0
+
+===== TESTE 3: ALGORITMO INVALIDO =====
+Erro: use rate ou edf.
+Codigo retornado: 1
+
+===== TESTE 4: ARQUIVO INEXISTENTE =====
+Não foi possivel abrir o arquivo
+Codigo retornado: 1
+
+===== TESTE 5: VALOR NAO NUMERICO =====
+erro; valor de tarefa invalido
+Codigo retornado: 1
+
+===== TESTE 6: BURST MAIOR QUE DEADLINE =====
+erro: a tarefa deve respeitar C <= D <= P.
+Codigo retornado: 1
+
+===== TESTE 7: DEADLINE MAIOR QUE PERIODO =====
+erro: a tarefa deve respeitar C <= D <= P.
+Codigo retornado: 1
+
+===== TESTE 8: ARQUIVO SEM TAREFAS =====
+Erro: nenhuma tarefa encontrada.
+Codigo retornado: 1
+
+===== TESTE 9: TEMPO TOTAL INVALIDO =====
+tempo total invalido
+Codigo retornado: 1
+
+===== TESTE 10: CAMPO FALTANDO =====
+ERRO: linha de tarefa invalida
+Codigo retornado: 1
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_
+3[00m$ [K[A[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ rm -f invalido.txtecho "Codigo retornado: $?"./scheduler rate invalido.txt[16@printf '100\nATT 20 12\n' >[C[C[C[C[C[C[C[C[C[C[C[C[C[6P./scheduler rate[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Codigo retornado: $?"[4Prm -f invalido.txt[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ rm -f invalido.txtecho "Codigo retornado: $?"./scheduler rate invalido.txt[16@printf '100\nATT 20 12\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 10: CAMPO FALTANDO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate invalido.txt[19@printf 'zero\nATT 20 12 8\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 9: TEMPO TOTAL INVALIDO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate invalido.txt[5@printf '100\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 8: ARQUIVO SEM TAREFAS ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate invalido.txt[18@printf '100\nATT 20 25 8\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 7: DEADLINE MAIOR QUE PERIODO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate invalido.txt[17@printf '100\nATT 20 5 8\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 6: BURST MAIOR QUE DEADLINE ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate invalido.txt[21@printf '100\nATT vinte 12 8\n' >[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "===== TESTE 5: VALOR NAO NUMERICO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate inexistente.txtecho "===== TESTE 4: ARQUIVO INEXISTENTE ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler outro voo.txtecho "===== TESTE 3: ALGORITMO INVALIDO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler edf voo.txtecho "===== TESTE 2: EDF VALIDO ====="[K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$  "Codigo retornado: $?"./scheduler rate voo.txtecho "===== TESTE 1: RATE VALIDO ====="printf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txtgit push[Kcommit -m "corração de sintaxe e texte inicial aprovado"status[Kadd .echo "Codigo: $?"./scheduler rate voo.txt[32@printf '100\nATT 20 12 8\nNAV 50 30 15\
