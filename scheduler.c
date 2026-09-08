@@ -59,6 +59,7 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     }
     if(fgets(linha, sizeof linha, arquivo) == NULL || !ler_positivo(linha, tempo_total)){
         fprintf(stderr, "tempo total invalido\n");
+        fclose(arquivo);
         return 0;
     }
     *tarefas = NULL;
@@ -139,7 +140,7 @@ int escolher_tarefa(Tarefa *tarefas, int quantidade, const char *algoritimo){
     }
     return escolhida;
 }
-int liberar_tarefas(Tarefa *tarefas, int quantidade, int tempo){
+void liberar_tarefas(Tarefa *tarefas, int quantidade, int tempo){
     int i;
 
     for(i=0; i<quantidade; i++){
@@ -151,7 +152,7 @@ int liberar_tarefas(Tarefa *tarefas, int quantidade, int tempo){
     }
 }
 
-void inicalizar_tarefa(Tarefa *tarefas, int quantidade){
+void inicializar_tarefa(Tarefa *tarefas, int quantidade){
     int i;
     for(i=0; i<quantidade; i++){
         tarefas[i].restante = 0;
@@ -166,16 +167,38 @@ void inicalizar_tarefa(Tarefa *tarefas, int quantidade){
 
 void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algoritimo){
     int tempo;
-    int escolha;
+    int escolhida;
     int i;
 
-    inicalizar_tarefas(tarefas, quantidade);
+    inicializar_tarefa(tarefas, quantidade);
 
     for(tempo = 0; tempo<tempo_total; tempo++){
         for(i=0; i<quantidade; i++){
             if(tarefas[i].ativa && tarefas[i].restante > 0 && tarefas[i].deadline_absoluto == tempo){
-                tarefas[i].perdidas
+                tarefas[i].perdidas++;
+                tarefas[i].restante = 0;
+                tarefas[i].ativa=0;
             }
+        }
+        liberar_tarefas(tarefas,quantidade, tempo);
+        escolhida = escolher_tarefa(tarefas, quantidade, algoritimo);
+
+        if(escolhida >=0){
+            tarefas[escolhida].restante--;
+            if(tarefas[escolhida].restante ==0){
+                tarefas[escolhida].concluidas++;
+                tarefas[escolhida].ativa = 0;
+            }
+        }
+    }
+    for(i=0; i<quantidade; i++){
+        if(tarefas[i].ativa && tarefas[i].restante > 0 && tarefas[i].deadline_absoluto ==tempo_total){
+            tarefas[i].perdidas++;
+            tarefas[i].restante=0;
+            tarefas[i].ativa = 0;
+        }
+        if(tarefas[i].ativa && tarefas[i].restante >0){
+            tarefas[i].mortas++;
         }
     }
 }
@@ -199,7 +222,7 @@ int main(int argc, char *argv[]) {
     if (!carregar_arquivo(argv[2], &tempo_total,&tarefas, &quantidade)) {
         return 1;
     }
-
+    simular(tarefas, quantidade, tempo_total, argv[1]);
     free(tarefas);
     return 0;
 }

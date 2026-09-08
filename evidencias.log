@@ -381,3 +381,43 @@ To https://github.com/danduleba/implementa-o_3.git
    691d6dc..aba2962  main -> main
 [?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ 
 Script done on 2026-09-07 20:23:55-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-09-08 14:40:07-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="191" LINES="11"]
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git add . 
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   evidencias.log[m
+	[32mmodified:   scheduler.c[m
+
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git commit -m "add função simular"
+[?2004l[main 8117cd1] add função simular
+ 2 files changed, 45 insertions(+), 4 deletions(-)
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 957 bytes | 68.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/danduleba/implementa-o_3.git
+   aba2962..8117cd1  main -> main
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [7mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler[27mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[01m[Kscheduler.c:[m[K In function ‘[01m[Ksimular[m[K’:
+[01m[Kscheduler.c:172:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kinicalizar_tarefas[m[K’; did you mean ‘[01m[Kinicalizar_tarefa[m[K’? [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  172 |     [01;31m[Kinicalizar_tarefas[m[K(tarefas, quantidade);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kinicalizar_tarefa[m[K
+[01m[Kscheduler.c:177:27:[m[K [01;35m[Kwarning: [m[Kstatement with no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-value-Wunused-value]8;;[m[K]
+  177 |                 [01;35m[Ktarefas[i].perdidas[m[K
+      |                 [01;35m[K~~~~~~~~~~^~~~~~~~~[m[K
+[01m[Kscheduler.c:177:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+  177 |                 tarefas[i].perdidas
+      |                                    [01;31m[K^[m[K
+      |                                    [32m[K;[m[K
+  178 |             [32m[K}[m[K
+      |             [32m[K~[m[K                       
+[01m[Kscheduler.c:169:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kescolha[m[K’ 
