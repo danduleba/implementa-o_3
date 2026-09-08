@@ -16,7 +16,7 @@ typedef struct {
     int restante; 
     int deadline_absoluto;
     int concluidas;
-    int pardidas;
+    int perdidas;
     int mortas;
     int ativa;
 }Tarefa;
@@ -164,6 +164,22 @@ void inicalizar_tarefa(Tarefa *tarefas, int quantidade){
     }
 }
 
+void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algoritimo){
+    int tempo;
+    int escolha;
+    int i;
+
+    inicalizar_tarefas(tarefas, quantidade);
+
+    for(tempo = 0; tempo<tempo_total; tempo++){
+        for(i=0; i<quantidade; i++){
+            if(tarefas[i].ativa && tarefas[i].restante > 0 && tarefas[i].deadline_absoluto == tempo){
+                tarefas[i].perdidas
+            }
+        }
+    }
+}
+
 int main(int argc, char *argv[]) {
     Tarefa *tarefas;
     int quantidade;
@@ -180,8 +196,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    if (!carregar_arquivo(argv[2], &tempo_total,
-                          &tarefas, &quantidade)) {
+    if (!carregar_arquivo(argv[2], &tempo_total,&tarefas, &quantidade)) {
         return 1;
     }
 
