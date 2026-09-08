@@ -165,6 +165,19 @@ void inicializar_tarefa(Tarefa *tarefas, int quantidade){
     }
 }
 
+void registrar_trecho(FILE *saida, Tarefa *tarefas, int tarefa, int inicio, int fim, char estado){
+    int duracao = fim - inicio +1;
+    if(duracao<=0){
+        return;
+    }
+    if(tarefa == -1){
+        fprintf(saida, "idle for %d units\n", duracao);
+    }
+    else{
+        fprintf(saida, "[%s] for %d units - %c\n", tarefas[tarefa].nome,duracao,estado);
+    }
+}
+
 void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algoritimo){
     int tempo;
     int escolhida;
