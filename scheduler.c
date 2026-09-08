@@ -6,6 +6,7 @@
 #include <ctype.h>
 
 #define TAM_NOME 32
+#define LOGIN "dad"
 
 typedef struct {
     char nome[TAM_NOME];
@@ -216,6 +217,26 @@ void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algor
     }
 }
 
+int executar_simulacao(const char *algoritimo, Tarefa *tarefas, int quantidade, int tempo_total){
+    FILE *saida;
+    char nome_saida[64];
+
+    snprintf(nome_saida, sizeof nome_saida, "%s_" LOGIN ".out", algoritimo);
+
+    saida=fopen(nome_saida,"w");
+
+    if(saida==NULL){
+        fprintf(stderr, "nao foi possivel criar arquivo de saida\n");
+        return 0;
+    }
+    if(fprintf(saida,"EXECUTION BY %s\n\n", strcmp(algoritimo, "rate")== 0 ? "RATE" : " EDF")<0){
+        fclose(saida);
+        return 0;
+    }
+    simular(tarefas,quantidade,tempo_total,algoritimo);
+    return fclose(saida) == 0;
+}
+
 int main(int argc, char *argv[]) {
     Tarefa *tarefas;
     int quantidade;
@@ -235,7 +256,10 @@ int main(int argc, char *argv[]) {
     if (!carregar_arquivo(argv[2], &tempo_total,&tarefas, &quantidade)) {
         return 1;
     }
-    simular(tarefas, quantidade, tempo_total, argv[1]);
+    if (!executar_simulacao(argv[1], tarefas,quantidade, tempo_total)) {
+    free(tarefas);
+    return 1;
+    }
     free(tarefas);
     return 0;
 }

@@ -573,4 +573,142 @@ Changes not staged for commit:
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-	[31mesperado_rate.out
+	[31mesperado_rate.out[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ giit [K[K[Kt aadd[K[K[Kdd .
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git add .statusif [ -f rate_dad.out ] && cmp -s esperado_rate.out rate_dad.out; then     echo "[PASSOU] Saida exatamente igual ao enunciado"; else     echo "[FALHOU] Saida diferente do enunciado";     if [ ! -f rate_dad.out ]; then         echo "Arquivo rate_dad.out nao foi criado";     else         diff -u esperado_rate.out rate_dad.out;     fi; fi[A[A]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ ./scheduler rate voo.txt[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Prm -f rate_dad.ou[C[H[2J]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ cat > esperado_rate.out <<'EOF'
+EXECUTION BY RATE
+
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+EOF
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprintf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txt
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o schedulerit push[Kcommit -m "função registra trecho pre teste"
+[?2004l[main 326fb25] função registra trecho pre teste
+ 3 files changed, 170 insertions(+), 1 deletion(-)
+ create mode 100644 esperado_rate.out
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git push
+[?2004lEnumerating objects: 8, done.
+Counting objects:  12% (1/8)Counting objects:  25% (2/8)Counting objects:  37% (3/8)Counting objects:  50% (4/8)Counting objects:  62% (5/8)Counting objects:  75% (6/8)Counting objects:  87% (7/8)Counting objects: 100% (8/8)Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 1.87 KiB | 68.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/danduleba/implementa-o_3.git
+   dc1b801..326fb25  main -> main
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git pushcommit -m "função registra trecho pre teste"add .[Kstatusif [ -f rate_dad.out ] && cmp -s esperado_rate.out rate_dad.out; then     echo "[PASSOU] Saida exatamente igual ao enunciado"; else     echo "[FALHOU] Saida diferente do enunciado";     if [ ! -f rate_dad.out ]; then         echo "Arquivo rate_dad.out nao foi criado";     else         diff -u esperado_rate.out rate_dad.out;     fi; fi[A[A]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git status[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Padd .commit -m "função registra trecho pre teste"push[K[K[H[2J]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+
+printf '100\nATT 20 12 8\nNAV 50 30 15\n' > voo.txt
+
+cat > esperado_rate.out <<'EOF'
+EXECUTION BY RATE
+
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - F
+idle for 12 units
+
+LOST DEADLINES
+[ATT] 0
+[NAV] 1
+
+COMPLETE EXECUTION
+[ATT] 5
+[NAV] 1
+
+KILLED
+[ATT] 0
+[NAV] 0
+EOF
+
+rm -f rate_dad.out
+./scheduler rate voo.txt
+
+[7mif [ -f rate_dad.out ] && cmp -s esperado_rate.out rate_dad.out; then[27m
+[7m    echo "[PASSOU] Saida exatamente igual ao enunciado"[27m
+[7melse[27m
+[7m    echo "[FALHOU] Saida diferente do enunciado"[27m
+[7m    if [ ! -f rate_dad.out ]; then[27m
+[7m        echo "Arquivo rate_dad.out nao foi criado"[27m
+[7m    else[27m
+[7m        diff -u esperado_rate.out rate_dad.out[27m
+[7m    fi[27m
+[7mfi[27m[A[A[A[A[A[A[A[A[Aif [ -f rate_dad.out ] && cmp -s esperado_rate.out rate_dad.out; then
+    echo "[PASSOU] Saida exatamente igual ao enunciado"
+else
+    echo "[FALHOU] Saida diferente do enunciado"
+    if [ ! -f rate_dad.out ]; then
+        echo "Arquivo rate_dad.out nao foi criado"
+    else
+        diff -u esperado_rate.out rate_dad.out
+    fi
+fi
+[?2004l[FALHOU] Saida diferente do enunciado
+Arquivo rate_dad.out nao foi criado
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: 
