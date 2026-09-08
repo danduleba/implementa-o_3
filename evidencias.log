@@ -420,4 +420,28 @@ To https://github.com/danduleba/implementa-o_3.git
       |                                    [32m[K;[m[K
   178 |             [32m[K}[m[K
       |             [32m[K~[m[K                       
-[01m[Kscheduler.c:169:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kescolha[m[K’ 
+[01m[Kscheduler.c:169:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kescolha[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-variable-Wunused-variable]8;;[m[K]
+  169 |     int [01;35m[Kescolha[m[K;
+      |         [01;35m[K^~~~~~~[m[K
+[01m[Kscheduler.c:167:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kalgoritimo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+  167 | void simular(Tarefa *tarefas, int quantidade, int tempo_total, [01;35m[Kconst char *algoritimo[m[K){
+      |                                                                [01;35m[K~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[Kscheduler.c:[m[K In function ‘[01m[Kliberar_tarefas[m[K’:
+[01m[Kscheduler.c:152:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-return-type-Wreturn-type]8;;[m[K]
+  152 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [7mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler[27mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[01m[Kscheduler.c:[m[K In function ‘[01m[Ksimular[m[K’:
+[01m[Kscheduler.c:172:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kinicializar_tarefas[m[K’; did you mean ‘[01m[Kinicializar_tarefa[m[K’? [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  172 |     [01;31m[Kinicializar_tarefas[m[K(tarefas, quantidade);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kinicializar_tarefa[m[K
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[01m[Kscheduler.c:[m[K In function ‘[01m[Ksimular[m[K’:
+[01m[Kscheduler.c:173:5:[m[K [01;31m[Kerror: [m[Kimplicit declaration of function ‘[01m[Kinicializar_tarefas[m[K’; did you mean ‘[01m[Kinicializar_tarefa[m[K’? [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  173 |     [01;31m[Kinicializar_tarefas[m[K(tarefas, quantidade);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kinicializar_tarefa[m[K
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ git add.[K .
+[?2004l[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/imp
