@@ -167,7 +167,7 @@ void inicializar_tarefa(Tarefa *tarefas, int quantidade){
 }
 
 void registrar_trecho(FILE *saida, Tarefa *tarefas, int tarefa, int inicio, int fim, char estado){
-    int duracao = fim - inicio +1;
+    int duracao = fim - inicio;
     if(duracao<=0){
         return;
     }
@@ -179,7 +179,9 @@ void registrar_trecho(FILE *saida, Tarefa *tarefas, int tarefa, int inicio, int 
     }
 }
 
-void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algoritimo){
+void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algoritimo, FILE *saida){
+    int tarefa_atual=-2;
+    int inicio_trecho =0;
     int tempo;
     int escolhida;
     int i;
@@ -189,6 +191,10 @@ void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algor
     for(tempo = 0; tempo<tempo_total; tempo++){
         for(i=0; i<quantidade; i++){
             if(tarefas[i].ativa && tarefas[i].restante > 0 && tarefas[i].deadline_absoluto == tempo){
+                if(tarefa_atual == i){
+                    registrar_trecho(saida,tarefas, i, inicio_trecho, tempo, 'L');
+                    tarefa_atual = -2;
+                }
                 tarefas[i].perdidas++;
                 tarefas[i].restante = 0;
                 tarefas[i].ativa=0;
@@ -196,24 +202,66 @@ void simular(Tarefa *tarefas, int quantidade, int tempo_total, const char *algor
         }
         liberar_tarefas(tarefas,quantidade, tempo);
         escolhida = escolher_tarefa(tarefas, quantidade, algoritimo);
+        if (escolhida != tarefa_atual) {
+            if (tarefa_atual == -1) {
+                registrar_trecho(saida, tarefas, -1,inicio_trecho, tempo, ' ');
+            } 
+            else if (tarefa_atual >= 0) {
+                registrar_trecho(saida, tarefas, tarefa_atual,inicio_trecho, tempo, 'H');
+            }
+
+    tarefa_atual = escolhida;
+    inicio_trecho = tempo;
+}
 
         if(escolhida >=0){
             tarefas[escolhida].restante--;
             if(tarefas[escolhida].restante ==0){
                 tarefas[escolhida].concluidas++;
                 tarefas[escolhida].ativa = 0;
+                registrar_trecho(saida, tarefas, escolhida, inicio_trecho, tempo +1, 'F');
+                tarefa_atual = -2;
             }
         }
     }
     for(i=0; i<quantidade; i++){
         if(tarefas[i].ativa && tarefas[i].restante > 0 && tarefas[i].deadline_absoluto ==tempo_total){
+            if(tarefa_atual == i){
+                registrar_trecho(saida, tarefas, i, inicio_trecho, tempo_total, 'L');
+                tarefa_atual = -2;
+            }
             tarefas[i].perdidas++;
             tarefas[i].restante=0;
             tarefas[i].ativa = 0;
         }
-        if(tarefas[i].ativa && tarefas[i].restante >0){
-            tarefas[i].mortas++;
+    }
+    if(tarefa_atual == -1){
+        registrar_trecho(saida, tarefas, -1, inicio_trecho, tempo_total, ' ');
+    }
+    else if(tarefa_atual>=0){
+        registrar_trecho(saida,tarefas,tarefa_atual,inicio_trecho,tempo_total, 'K');
+    }
+    for(i =0; i<quantidade; i++){
+        if (tarefas[i].ativa && tarefas[i].restante > 0) {
+        tarefas[i].mortas++;
         }
+    }
+    fprintf(saida, "\nLOST DEADLINES\n");
+
+    for (i = 0; i < quantidade; i++) {
+        fprintf(saida, "[%s] %d\n",tarefas[i].nome, tarefas[i].perdidas);
+    }
+
+    fprintf(saida, "\nCOMPLETE EXECUTION\n");
+
+    for (i = 0; i < quantidade; i++) {
+        fprintf(saida, "[%s] %d\n",tarefas[i].nome, tarefas[i].concluidas);
+    }
+
+    fprintf(saida, "\nKILLED\n");
+
+    for (i = 0; i < quantidade; i++) {
+        fprintf(saida, "[%s] %d\n",tarefas[i].nome, tarefas[i].mortas);
     }
 }
 
@@ -229,11 +277,11 @@ int executar_simulacao(const char *algoritimo, Tarefa *tarefas, int quantidade, 
         fprintf(stderr, "nao foi possivel criar arquivo de saida\n");
         return 0;
     }
-    if(fprintf(saida,"EXECUTION BY %s\n\n", strcmp(algoritimo, "rate")== 0 ? "RATE" : " EDF")<0){
+    if(fprintf(saida,"EXECUTION BY %s\n\n", strcmp(algoritimo, "rate")== 0 ? "RATE" : "EDF")<0){
         fclose(saida);
         return 0;
     }
-    simular(tarefas,quantidade,tempo_total,algoritimo);
+    simular(tarefas,quantidade,tempo_total,algoritimo,saida);
     return fclose(saida) == 0;
 }
 

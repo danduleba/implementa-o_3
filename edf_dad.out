@@ -1,10 +1,9 @@
-EXECUTION BY RATE
+EXECUTION BY EDF
 
 [ATT] for 8 units - F
-[NAV] for 12 units - H
+[NAV] for 15 units - F
 [ATT] for 8 units - F
-[NAV] for 2 units - L
-idle for 10 units
+idle for 9 units
 [ATT] for 8 units - F
 idle for 2 units
 [NAV] for 10 units - H
@@ -16,11 +15,11 @@ idle for 12 units
 
 LOST DEADLINES
 [ATT] 0
-[NAV] 1
+[NAV] 0
 
 COMPLETE EXECUTION
 [ATT] 5
-[NAV] 1
+[NAV] 2
 
 KILLED
 [ATT] 0

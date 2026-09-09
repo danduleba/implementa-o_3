@@ -711,4 +711,398 @@ To https://github.com/danduleba/implementa-o_3.git
 fi
 [?2004l[FALHOU] Saida diferente do enunciado
 Arquivo rate_dad.out nao foi criado
-[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: 
+[?2004h]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: /mnt/c/Users/User/Desktop/implementação3/implementa-o_3[01;32mdanilo@PC-Danilo[00m:[01;34m/mnt/c/Users/User/Desktop/implementação3/implementa-o_3[00m$ [K]0;danilo@PC-Danilo: Script iniciado em 2026-09-09 07:32:10-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="154" LINES="13"]
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcat rate_dad.out[27m
+[7mwc -l rate_dad.out[27m[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat rate_dad.out
+wc -l rate_dad.out
+[?2004lEXECUTION BY RATE
+
+2 rate_dad.out
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler[27m
+[7mrm -f rate_dad.out[27m
+[7m./scheduler rate voo.txt[27m
+[7mcat rate_dad.out[27m
+[7mwc -l rate_dad.out[27m[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+rm -f rate_dad.out
+./scheduler rate voo.txt
+cat rate_dad.out
+wc -l rate_dad.out
+[?2004lEXECUTION BY RATE
+
+2 rate_dad.out
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ F[K^[[200~gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l rate_dad.out[K^[[200~gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwc -l rate_dad.out[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler[27mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcat > voo.txt <<'EOF'[27m
+[7m100[27m
+[7mATT 20 12 8[27m
+[7mNAV 50 30 15[27m
+[7mEOF[27m[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > voo.txt <<'EOF'
+100
+ATT 20 12 8
+NAV 50 30 15
+EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_rate.out <<'EOF'
+EXECUTION BY RATE
+
+[ATT] for 8 units - F
+[NAV] for 12 units - H
+[ATT] for 8 units - F
+[NAV] for 2 units - L
+idle for 10 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units[ATT] for 8 units - Fidle for 12 units[7mLOST DEADLINES[27m[7m[ATT] 0[27m[7m[NAV] 1[27m[7mCOMPLETE EXECUTION[27m[7m[ATT] 5[27m[7m[NAV] 1[27m[7mKILLED[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mEOF[27mLOST DEADLINES[ATT] 0[NAV] 1COMPLETE EXECUTION[ATT] 5[NAV] 1KILLED[ATT] 0[NAV] 0EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f rate_dad.out[27m
+[7m./scheduler rate voo.txt[27m
+
+[7mcmp -s esperado_rate.out rate_dad.out &&[27m
+[7mecho "[PASSOU] Saida igual ao enunciado" ||[27m
+[7mecho "[FALHOU] Saida diferente do enunciado"[27m[A[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f rate_dad.out
+./scheduler rate voo.txt
+
+cmp -s esperado_rate.out rate_dad.out &&
+echo "[PASSOU] Saida igual ao enunciado" ||
+echo "[FALHOU] Saida diferente do enunciado"
+[?2004l[PASSOU] Saida igual ao enunciado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 units[7mLOST DEADLINES[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mCOMPLETE EXECUTION[27m[7m[ATT] 5[27m[7m[NAV] 2[27m[7mKILLED[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mEOF[27mLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF[7mrm -f edf_dad.out[27m[7m./scheduler edf voo.txt[27m[C[C[Crm -f edf_dad.out./scheduler edf voo.txt
+[?2004l[?2004h> [7mrm -f edf_dad.out[27m
+[7m./scheduler edf voo.txt[27m[A[C[Crm -f edf_dad.out
+./scheduler edf voo.txt
+[?2004l[?2004h> [7mcmp -s esperado_edf.out edf_dad.out &&[27m
+[7mecho "[PASSOU] EDF igual ao esperado" ||[27m
+[7mecho "[FALHOU] EDF diferente do esperado"[27m[A[A[C[Ccmp -s esperado_edf.out edf_dad.out &&
+echo "[PASSOU] EDF igual ao esperado" ||
+echo "[FALHOU] EDF diferente do esperado"
+[?2004l[?2004h> exit
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 unitsLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOFrm -f edf_dad.out./scheduler edf voo.txtrm -f edf_dad.out./scheduler edf voo.txtcmp -s esperado_edf.out edf_dad.out &&echo "[PASSOU] EDF igual ao esperado" ||echo "[FALHOU] EDF diferente do esperado"exit
+[?2004l[?2004h> ^C[?2004l[?2004h[?2004l
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 units[7mLOST DEADLINES[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mCOMPLETE EXECUTION[27m[7m[ATT] 5[27m[7m[NAV] 2[27m[7mKILLED[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mEOF[27mLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f edf_dad.out[27m
+[7m./scheduler edf voo.txt[27m[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f edf_dad.out
+./scheduler edf voo.txt
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcmp -s esperado_edf.out edf_dad.out &&[27m
+[7mecho "[PASSOU] EDF igual ao esperado" ||[27m
+[7mecho "[FALHOU] EDF diferente do esperado"[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cmp -s esperado_edf.out edf_dad.out &&
+echo "[PASSOU] EDF igual ao esperado" ||
+echo "[FALHOU] EDF diferente do esperado"
+[?2004l[FALHOU] EDF diferente do esperado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cmp -s esperado_edf.out edf_dad.out && echo "[PASSOU] EDF igual ao esperado" || echo "[FALHOU] EDF diferente do esperado"[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ./scheduler edf voo.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Prm -f edf_dad.out./scheduler edf voo.txtcmp -s esperado_edf.out edf_dad.out && echo "[PASSOU] EDF igual ao esperado" || echo "[FALHOU] EDF diferente do esperado"[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ./scheduler edf voo.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Prm -f edf_dad.outcat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 unitsLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 unitsLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmp -s esperado_edf.out edf_dad.out && echo "[PASSOU] EDF igual ao esperado" || echo "[FALHOU] EDF diferente do esperado"
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ./scheduler edf voo.txt[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccmp -s esperado_edf.out edf_dad.out && echo "[PASSOU] EDF igual ao esperado" || echo "[FALHOU] EDF diferente do esperado"[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [Cat > esperado_edf.out <<'EOF'                                                               E[12PXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 unitsLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 unitsLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF[A[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmp -s esperado_edf.out edf_dad.out && echo "[PASSOU] EDF igual ao esperado" || echo "[FALHOU] EDF diferente do esperado"
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[A[A[A[A[A[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[FALHOU] EDF diferente do esperado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > esperado_edf.out <<'EOF'
+EXECUTION BY EDF
+
+[ATT] for 8 units - F
+[NAV] for 15 units - F
+[ATT] for 8 units - F
+idle for 9 units
+[ATT] for 8 units - F
+idle for 2 units
+[NAV] for 10 units - H
+[ATT] for 8 units - F
+[NAV] for 5 units - F
+idle for 7 units
+[ATT] for 8 units - Fidle for 12 units[7mLOST DEADLINES[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mCOMPLETE EXECUTION[27m[7m[ATT] 5[27m[7m[NAV] 2[27m[7mKILLED[27m[7m[ATT] 0[27m[7m[NAV] 0[27m[7mEOF[27mLOST DEADLINES[ATT] 0[NAV] 0COMPLETE EXECUTION[ATT] 5[NAV] 2KILLED[ATT] 0[NAV] 0EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f edf_dad.out[27m
+[7m./scheduler edf voo.txt[27m[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f edf_dad.out
+./scheduler edf voo.txt
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcmp -s esperado_edf.out edf_dad.out &&[27m
+[7mecho "[PASSOU] EDF igual ao esperado" ||[27m
+[7mecho "[FALHOU] EDF diferente do esperado"[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cmp -s esperado_edf.out edf_dad.out &&
+echo "[PASSOU] EDF igual ao esperado" ||
+echo "[FALHOU] EDF diferente do esperado"
+[?2004l[FALHOU] EDF diferente do esperado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mdiff -u esperado_edf.out edf_dad.out[27mdiff -u esperado_edf.out edf_dad.out
+[?2004l--- esperado_edf.out	2026-09-09 09:00:16.412492468 -0300
++++ edf_dad.out	2026-09-09 09:00:22.838902670 -0300
+@@ -1,4 +1,4 @@
+-EXECUTION BY EDF
++EXECUTION BY  EDF
+ 
+ [ATT] for 8 units - F
+ [NAV] for 15 units - F
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [K]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mgcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler[27m
+[7mrm -f edf_dad.out[27m
+[7m./scheduler edf voo.txt[27m
+
+[7mcmp -s esperado_edf.out edf_dad.out &&[27m
+[7mecho "[PASSOU] EDF igual ao esperado" ||[27m
+[7mecho "[FALHOU] EDF diferente do esperado"[27m[A[A[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+rm -f edf_dad.out
+./scheduler edf voo.txt
+
+cmp -s esperado_edf.out edf_dad.out &&
+echo "[PASSOU] EDF igual ao esperado" ||
+echo "[FALHOU] EDF diferente do esperado"
+[?2004l[PASSOU] EDF igual ao esperado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7m./scheduler rate voo.txt > stdout.txt[27m./scheduler rate voo.txt > stdout.txt
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mtest ! -s stdout.txt &&[27m
+[7mecho "[PASSOU] Nenhuma mensagem na saída padrão" ||[27m
+[7mecho "[FALHOU] Houve mensagem na saída padrão"[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ test ! -s stdout.txt &&
+echo "[PASSOU] Nenhuma mensagem na saída padrão" ||
+echo "[FALHOU] Houve mensagem na saída padrão"
+[?2004l[PASSOU] Nenhuma mensagem na saída padrão
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7m./scheduler fifo voo.txt > stdout.txt 2> stderr.txt[27m
+[7mstatus=$?[27m[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ./scheduler fifo voo.txt > stdout.txt 2> stderr.txt
+status=$?
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mif [ "$status" -ne 0 ] && [ ! -s stdout.txt ] && [ -s stderr.txt ]; then[27m
+[7m    echo "[PASSOU] Algoritmo invalido tratado corretamente"[27m
+[7melse[27m
+[7m    echo "[FALHOU] Tratamento do algoritmo invalido"[27m
+[7mfi[27m[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ if [ "$status" -ne 0 ] && [ ! -s stdout.txt ] && [ -s stderr.txt ]; then
+    echo "[PASSOU] Algoritmo invalido tratado corretamente"
+else
+    echo "[FALHOU] Tratamento do algoritmo invalido"
+fi
+[?2004l[PASSOU] Algoritmo invalido tratado corretamente
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcat > invalido.txt <<'EOF'[27m
+[7m100[27m
+[7mATT 20 5 8[27m
+[7mEOF[27m[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > invalido.txt <<'EOF'
+100
+ATT 20 5 8
+EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f rate_dad.out[27m
+[7m./scheduler rate invalido.txt > stdout.txt 2> stderr.txt[27m
+[7mstatus=$?[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f rate_dad.out
+./scheduler rate invalido.txt > stdout.txt 2> stderr.txt
+status=$?
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mif [ "$status" -ne 0 ] &&[27m
+[7m   [ ! -s stdout.txt ] &&[27m
+[7m   [ -s stderr.txt ] &&[27m
+[7m   [ ! -e rate_dad.out ]; then[27m
+[7m    echo "[PASSOU] Tarefa invalida tratada corretamente"[27m
+[7melse[27m
+[7m    echo "[FALHOU] Tratamento da tarefa invalida"[27m
+[7mfi[27m[A[A[A[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ if [ "$status" -ne 0 ] &&
+   [ ! -s stdout.txt ] &&
+   [ -s stderr.txt ] &&
+   [ ! -e rate_dad.out ]; then
+    echo "[PASSOU] Tarefa invalida tratada corretamente"
+else
+    echo "[FALHOU] Tratamento da tarefa invalida"
+fi
+[?2004l[PASSOU] Tarefa invalida tratada corretamente
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcat > nao_numerico.txt <<'EOF'[27m
+[7m100[27m
+[7mATT vinte 12 8[27m
+[7mEOF[27m[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > nao_numerico.txt <<'EOF'
+100
+ATT vinte 12 8
+EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f rate_dad.out[27m
+[7m./scheduler rate nao_numerico.txt > stdout.txt 2> stderr.txt[27m
+[7mstatus=$?[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f rate_dad.out
+./scheduler rate nao_numerico.txt > stdout.txt 2> stderr.txt
+status=$?
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mif [ "$status" -ne 0 ] &&[27m
+[7m   [ ! -s stdout.txt ] &&[27m
+[7m   [ -s stderr.txt ] &&[27m
+[7m   [ ! -e rate_dad.out ]; then[27m
+[7m    echo "[PASSOU] Valor nao numerico tratado corretamente"[27m
+[7melse[27m
+[7m    echo "[FALHOU] Tratamento de valor nao numerico"[27m
+[7mfi[27m[A[A[A[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ if [ "$status" -ne 0 ] &&
+   [ ! -s stdout.txt ] &&
+   [ -s stderr.txt ] &&
+   [ ! -e rate_dad.out ]; then
+    echo "[PASSOU] Valor nao numerico tratado corretamente"
+else
+    echo "[FALHOU] Tratamento de valor nao numerico"
+fi
+[?2004l[PASSOU] Valor nao numerico tratado corretamente
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mcat > campo_faltando.txt <<'EOF'[27m
+[7m100[27m
+[7mATT 20 12[27m
+[7mEOF[27m[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ cat > campo_faltando.txt <<'EOF'
+100
+ATT 20 12
+EOF
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mrm -f rate_dad.out[27m
+[7m./scheduler rate campo_faltando.txt > stdout.txt 2> stderr.txt[27m
+[7mstatus=$?[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ rm -f rate_dad.out
+./scheduler rate campo_faltando.txt > stdout.txt 2> stderr.txt
+status=$?
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mif [ "$status" -ne 0 ] &&[27m
+[7m   [ ! -s stdout.txt ] &&[27m
+[7m   [ -s stderr.txt ] &&[27m
+[7m   [ ! -e rate_dad.out ]; then[27m
+[7m    echo "[PASSOU] Campo faltando tratado corretamente"[27m
+[7melse[27m
+[7m    echo "[FALHOU] Tratamento de campo faltando"[27m
+[7mfi[27m[A[A[A[A[A[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ if [ "$status" -ne 0 ] &&
+   [ ! -s stdout.txt ] &&
+   [ -s stderr.txt ] &&
+   [ ! -e rate_dad.out ]; then
+    echo "[PASSOU] Campo faltando tratado corretamente"
+else
+    echo "[FALHOU] Tratamento de campo faltando"
+fi
+[?2004l[PASSOU] Campo faltando tratado corretamente
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ^[[200~chmod +x testar.sh
+[?2004lbash: $'\E[200~chmod': comando não encontrado
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ ./testar.sh~
+[?2004lbash: ./testar.sh~: Arquivo ou diretório inexistente
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mchmod +x testar.sh[27m
+[7m./testar.sh[27m[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ chmod +x testar.sh
+./testar.sh
+[?2004l========================================
+TESTES DO ESCALONADOR
+========================================
+
+[FALHOU] Makefile: make clean e make
+[PASSOU] Compilacao sem erros e sem avisos
+[PASSOU] Rate: codigo de retorno correto
+[PASSOU] Rate: nenhuma mensagem em stdout
+[PASSOU] Rate: nenhuma mensagem em stderr
+[PASSOU] Rate: arquivo rate_dad.out criado
+[PASSOU] Rate: saida exatamente igual ao enunciado
+[PASSOU] EDF: codigo de retorno correto
+[PASSOU] EDF: nenhuma mensagem em stdout
+[PASSOU] EDF: nenhuma mensagem em stderr
+[PASSOU] EDF: arquivo edf_dad.out criado
+[PASSOU] EDF: saida exatamente igual ao esperado
+[PASSOU] Desempate pela ordem do arquivo
+[PASSOU] Tarefa morta no final da simulacao
+[PASSOU] Sem argumentos
+[PASSOU] Quantidade insuficiente de argumentos
+[PASSOU] Quantidade excessiva de argumentos
+[PASSOU] Algoritmo invalido
+[PASSOU] Arquivo inexistente
+[PASSOU] Campo faltando
+[PASSOU] Valor nao numerico
+[PASSOU] Valor nao positivo
+[PASSOU] Restricao C maior que
