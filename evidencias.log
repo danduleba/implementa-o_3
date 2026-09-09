@@ -1105,4 +1105,89 @@ TESTES DO ESCALONADOR
 [PASSOU] Campo faltando
 [PASSOU] Valor nao numerico
 [PASSOU] Valor nao positivo
-[PASSOU] Restricao C maior que
+[PASSOU] Restricao C maior que D
+[PASSOU] Restricao D maior que P
+[PASSOU] Campo extra
+[PASSOU] Tempo total invalido
+[PASSOU] Arquivo sem tarefas
+[PASSOU] Falha ao criar arquivo de saida
+
+========================================
+RESUMO
+========================================
+Total:     28
+Passaram:  27
+Falharam:  1
+
+RESULTADO FINAL: EXISTEM TESTES COM FALHA
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7m./testar.sh 2>&1 | grep '\[FALHOU\]'[27m./testar.sh 2>&1 | grep '\[FALHOU\]'
+[?2004l[FALHOU] Makefile: make clean e make
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ git add .
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ git coo[Kmmit -m "ajustes em [K[K[Kna função simular + serie de testes"
+[?2004l[main 125bf7f] ajustes na função simular + serie de testes
+ 12 files changed, 883 insertions(+), 15 deletions(-)
+ create mode 100644 campo_faltando.txt
+ rename esperado_rate.out => edf_dad.out (74%)
+ create mode 100644 esperado_edf.out
+ create mode 100644 invalido.txt
+ create mode 100644 nao_numerico.txt
+ delete mode 100644 rate_dad.out
+ mode change 100644 => 100755 scheduler
+ create mode 100644 stderr.txt
+ create mode 100644 stdout.txt
+ create mode 100755 testar.sh
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ git status
+[?2004lOn branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mscript -a evidencias.log[27m
+[7m./testar.sh[27m
+[7mexit[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ script -a evidencias.log
+./testar.sh
+exit
+[?2004lScript iniciado, arquivo de registro de saída é "evidencias.log".
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ .\[K/testar.sh
+[?2004l========================================
+TESTES DO ESCALONADOR
+========================================
+
+[FALHOU] Makefile: make clean e make
+[PASSOU] Compilacao sem erros e sem avisos
+[PASSOU] Rate: codigo de retorno correto
+[PASSOU] Rate: nenhuma mensagem em stdout
+[PASSOU] Rate: nenhuma mensagem em stderr
+[PASSOU] Rate: arquivo rate_dad.out criado
+[PASSOU] Rate: saida exatamente igual ao enunciado
+[PASSOU] EDF: codigo de retorno correto
+[PASSOU] EDF: nenhuma mensagem em stdout
+[PASSOU] EDF: nenhuma mensagem em stderr
+[PASSOU] EDF: arquivo edf_dad.out criado
+[PASSOU] EDF: saida exatamente igual ao esperado
+[PASSOU] Desempate pela ordem do arquivo
+[PASSOU] Tarefa morta no final da simulacao
+[PASSOU] Sem argumentos
+[PASSOU] Quantidade insuficiente de argumentos
+[PASSOU] Quantidade excessiva de argumentos
+[PASSOU] Algoritmo invalido
+[PASSOU] Arquivo inexistente
+[PASSOU] Campo faltando
+[PASSOU] Valor nao numerico
+[PASSOU] Valor nao positivo
+[PASSOU] Restricao C maior que D
+[PASSOU] Restricao D maior que P
+[PASSOU] Campo extra
+[PASSOU] Tempo total invalido
+[PASSOU] Arquivo sem tarefas
+[PASSOU] Falha ao criar arquivo de saida
+
+========================================
+RESUMO
+========================================
+Total:     28
+Passaram:  27
+Falharam:  1
+
+RESULTADO FINAL: EXISTEM TESTES COM FALHA
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localh
