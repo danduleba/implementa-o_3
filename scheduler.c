@@ -49,6 +49,7 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     char texto_deadline[32];
     char texto_burst[32];
     char extra[2];
+    int fim_nome, fim_periodo, fim_deadline;
     Tarefa tarefa;
     Tarefa *novo;
 
@@ -67,7 +68,10 @@ int carregar_arquivo(const char *nome_arquivo, int *tempo_total, Tarefa **tarefa
     *quantidade = 0;
 
     while (fgets(linha,sizeof linha, arquivo)!= NULL){ 
-        if(sscanf(linha,  "%31s %31s %31s %31s %1s", tarefa.nome, texto_periodo, texto_deadline, texto_burst, extra) != 4){
+        if(sscanf(linha,  "%31s%n %31s%n %31s%n %31s %1s", tarefa.nome, &fim_nome, texto_periodo, &fim_periodo, texto_deadline, &fim_deadline, texto_burst, extra) != 4 ||
+           !isspace((unsigned char)linha[fim_nome]) ||
+           !isspace((unsigned char)linha[fim_periodo]) ||
+           !isspace((unsigned char)linha[fim_deadline])){
             fprintf(stderr, "ERRO: linha de tarefa invalida\n");
             free(*tarefas);
             fclose(arquivo);

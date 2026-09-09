@@ -1190,4 +1190,100 @@ Passaram:  27
 Falharam:  1
 
 RESULTADO FINAL: EXISTEM TESTES COM FALHA
-[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localh
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhScript iniciado em 2026-09-09 09:20:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="154" LINES="13"]
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ .\[K/testar.sh
+[?2004l========================================
+TESTES DO ESCALONADOR
+========================================
+
+[FALHOU] Makefile: make clean e make
+[PASSOU] Compilacao sem erros e sem avisos
+[PASSOU] Rate: codigo de retorno correto
+[PASSOU] Rate: nenhuma mensagem em stdout
+[PASSOU] Rate: nenhuma mensagem em stderr
+[PASSOU] Rate: arquivo rate_dad.out criado
+[PASSOU] Rate: saida exatamente igual ao enunciado
+[PASSOU] EDF: codigo de retorno correto
+[PASSOU] EDF: nenhuma mensagem em stdout
+[PASSOU] EDF: nenhuma mensagem em stderr
+[PASSOU] EDF: arquivo edf_dad.out criado
+[PASSOU] EDF: saida exatamente igual ao esperado
+[PASSOU] Desempate pela ordem do arquivo
+[PASSOU] Tarefa morta no final da simulacao
+[PASSOU] Sem argumentos
+[PASSOU] Quantidade insuficiente de argumentos
+[PASSOU] Quantidade excessiva de argumentos
+[PASSOU] Algoritmo invalido
+[PASSOU] Arquivo inexistente
+[PASSOU] Campo faltando
+[PASSOU] Valor nao numerico
+[PASSOU] Valor nao positivo
+[PASSOU] Restricao C maior que D
+[PASSOU] Restricao D maior que P
+[PASSOU] Campo extra
+[PASSOU] Tempo total invalido
+[PASSOU] Arquivo sem tarefas
+[PASSOU] Falha ao criar arquivo de saida
+
+========================================
+RESUMO
+========================================
+Total:     28
+Passaram:  27
+Falharam:  1
+
+RESULTADO FINAL: EXISTEM TESTES COM FALHA
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ [7mmake clean[27m
+[7mmake[27m
+[7m./testar.sh[27m[A[A]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ make clean
+make
+./testar.sh
+[?2004lrm -f scheduler
+gcc -Wall -Wextra -pedantic -std=c11 scheduler.c -o scheduler
+========================================
+TESTES DO ESCALONADOR
+========================================
+
+[PASSOU] Makefile: make clean e make
+[PASSOU] Compilacao sem erros e sem avisos
+[PASSOU] Rate: codigo de retorno correto
+[PASSOU] Rate: nenhuma mensagem em stdout
+[PASSOU] Rate: nenhuma mensagem em stderr
+[PASSOU] Rate: arquivo rate_dad.out criado
+[PASSOU] Rate: saida exatamente igual ao enunciado
+[PASSOU] EDF: codigo de retorno correto
+[PASSOU] EDF: nenhuma mensagem em stdout
+[PASSOU] EDF: nenhuma mensagem em stderr
+[PASSOU] EDF: arquivo edf_dad.out criado
+[PASSOU] EDF: saida exatamente igual ao esperado
+[PASSOU] Desempate pela ordem do arquivo
+[PASSOU] Tarefa morta no final da simulacao
+[PASSOU] Sem argumentos
+[PASSOU] Quantidade insuficiente de argumentos
+[PASSOU] Quantidade excessiva de argumentos
+[PASSOU] Algoritmo invalido
+[PASSOU] Arquivo inexistente
+[PASSOU] Campo faltando
+[PASSOU] Valor nao numerico
+[PASSOU] Valor nao positivo
+[PASSOU] Restricao C maior que D
+[PASSOU] Restricao D maior que P
+[PASSOU] Campo extra
+[PASSOU] Tempo total invalido
+[PASSOU] Arquivo sem tarefas
+[PASSOU] Falha ao criar arquivo de saida
+
+========================================
+RESUMO
+========================================
+Total:     28
+Passaram:  28
+Falharam:  0
+
+RESULTADO FINAL: TODOS OS TESTES PASSARAM
+[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ git add .
+[?2004l[?2004h]0;guest@localhost: ~/Desktop/implementaçao3/dad/implementa-o_3[01;32mguest@localhost[00m:[01;34m~/Desktop/implementaçao3/dad/implementa-o_3[00m$ p[Kgit commit -m "escalonamento feito e make fil [Ke feito com testes"
+[?2004l[main 6410f81] escalonamento feito e make file feito com testes
+ 2 files changed, 98 insertions(+), 1 deletion(-)
+ create mode 100644 Makefile
+[?2004
